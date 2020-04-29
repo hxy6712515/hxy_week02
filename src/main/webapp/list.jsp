@@ -47,6 +47,10 @@
 		<tr>
 			<td colspan="10">
 				<a href="?pageNum=1">首页</a>
+				<%-- 
+				<a href="?pageNum=${page.pageNum-1 < 1?page.pageNum:page.pageNum-1 }">上一页</a>
+				<a href="?pageNum=${page.pageNum+1 > page.pages ?page.pageNum:page.pageNum+1  }">下一页</a>
+				 --%>
 				<a href="?pageNum=${page.prePage }">上一页</a>
 				<a href="?pageNum=${page.nextPage }">下一页</a>
 				<a href="?pageNum=${page.pages }">尾页</a>
